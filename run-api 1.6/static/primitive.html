@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <title>nyaa's api</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Main CSS --> 
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+  
+    <body>
+  
+        
+        <!-- Main navigation -->
+        <div id="sidebar">
+                      
+            <div class="navbar-expand-md navbar-dark"> 
+            
+                <header class="d-none d-md-block">
+                    <h1><span>nyaa's </span> api</h1>
+                </header>
+                
+                
+                <!-- Mobile menu toggle and header -->
+                <div class="mobile-header-controls">
+                    <a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>nyaa's </span> api</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SidebarContent" aria-controls="SidebarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+         
+                <div id="SidebarContent" class="collapse flex-column navbar-collapse">
+ 
+                        
+                    
+                    <!-- Main navigation items -->
+                    <nav class="navbar navbar-dark">
+                        <div id="mainNavbar">
+                            <ul class="flex-column mr-auto">
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#MenuDropdown" data-toggle="collapse" aria-controls="MenuDropdown" aria-expanded="false">每日更新导航(带图片缓存)</a>
+                                            <ul id="MenuDropdown" class="sub-navbar collapse flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/day">今日游戏一览2D.G.F.</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/day2">今日游戏一览girlcelly</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/day3">今日游戏一览NewDragon</a></li>
+                                            </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#MenuDropdown2" data-toggle="collapse" aria-controls="MenuDropdown2" aria-expanded="false">最新里番导航(api)</a>
+                                            <ul id="MenuDropdown2" class="sub-navbar collapse flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=桜都字幕组">桜都字幕组</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=魔穗字幕组">魔穗字幕组</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=脸肿字幕组">脸肿字幕组</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=hikiko123&category=1_1">hikiko123-无字幕里番导航（所有翻译组公共里番资源来源地）</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=NewDragon&category=1_1">NewDragon-里区动画导航</a></li>
+                                            </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#MenuDropdown3" data-toggle="collapse" aria-controls="MenuDropdown3" aria-expanded="false">最新CG & 漫画导航(api)</a>
+                                            <ul id="MenuDropdown3" class="sub-navbar collapse flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=成年コミック">最新里区漫画</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=同人誌%7C%7C例大祭">最新里区同人志/大祭</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=C9*%7C%7CC8*">Comic Market同人志即卖会(C9*, C8*)</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=同人CG集">最新里区同人CG集</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=ゲームCG">最新里区游戏CG集</a></li>
+                                            </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#MenuDropdown5" data-toggle="collapse" aria-controls="MenuDropdown5" aria-expanded="false">类型导航(api)</a>
+                                            <ul id="MenuDropdown5" class="sub-navbar collapse flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=&category=1_1">二次元动画</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=&category=1_2">二次元同人志</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=&category=1_3">二次元游戏</a></li>
+                                                <li class="nav-item"><a class="nav-link"  href="/sukebei?search=&category=1_4">二次元漫画</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=&category=1_5">二次元图片</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=&category=2_1">真人图片</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?search=&category=2_2">真人video</a></li>
+                                            </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#MenuDropdown6" data-toggle="collapse" aria-controls="MenuDropdown6" aria-expanded="false">av(api)</a>
+                                            <ul id="MenuDropdown6" class="sub-navbar collapse flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=NewDragon&category=2_2">NewDragon-av导航</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=offkab&category=2_2">offkab-av导航</a></li>
+                                            </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#MenuDropdown8" data-toggle="collapse" aria-controls="MenuDropdown8" aria-expanded="false">静画(api)</a>
+                                            <ul id="MenuDropdown8" class="sub-navbar collapse flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=milannews&category=1_5">milannews-里区CG集导航</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=milannews&category=1_4">milannews-里区漫画导航</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="/sukebei?user=milannews&category=1_2">milannews-里区同人志导航</a></li>
+                                            </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                        <a class="nav-link" href="keyword.html">关键词大全</a>
+                                </li>
+
+                                <li class="nav-item">
+                                        <a class="nav-link" href="update.html">更新文档</a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </nav>
+                
+                
+                
+                    <!-- Sidebar search form -->
+
+          
+                    <!-- Social icons -->
+
+                
+                </div>
+            </div> 
+        </div>
+    
+        
+        <div id="content">
+            <div id="content-wrapper">
+
+
+                <!-- Main content area -->
+                <main class="container-fluid">
+                    <div class="row">
+
+                        <!-- Main content -->
+                        <div class="col-md-8">
+                            <article>
+                            </article>
+                            <!-- Example pagination Bootstrap component -->
+                        </div>
+
+
+                        <!-- Sidebar -->
+
+
+                    </div> 
+                </main>
+
+
+                <!-- Footer -->
+                <div class="container-fluid footer-container">
+                    <footer class="footer">
+                        <div class="footer-bottom">
+                                <p class="text-center">Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href=""></a></p>
+                                <p class="text-center"><a href="#">Back to top</a></p>
+                        </div>
+                    </footer>
+                </div> 
+            </div>
+        </div>
+
+        <!-- Bootcamp JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../js/jquery-3.2.1.slim.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+    </body>
+</html>
